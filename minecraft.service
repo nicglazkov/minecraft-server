@@ -1,0 +1,25 @@
+[Unit]
+Description=Minecraft Server
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/minecraft/paper
+
+User=minecraft
+Group=minecraft
+
+Restart=always
+
+ExecStart=/usr/bin/screen -DmS mc /usr/bin/java -Xms4G  -Xmx10G -jar paper.jar --nogui
+
+ExecStop=/usr/bin/screen -p 0 -S mc -X eval 'stuff "say SERVER SHUTTING DOWN IN 15 SECONDS..."\015'
+ExecStop=/bin/sleep 5
+ExecStop=/usr/bin/screen -p 0 -S mc -X eval 'stuff "say SERVER SHUTTING DOWN IN 10 SECONDS..."\015'
+ExecStop=/bin/sleep 5
+ExecStop=/usr/bin/screen -p 0 -S mc -X eval 'stuff "say SERVER SHUTTING DOWN IN 5 SECONDS..."\015'
+ExecStop=/bin/sleep 5
+ExecStop=/usr/bin/screen -p 0 -S mc -X eval 'stuff "save-all"\015'
+ExecStop=/usr/bin/screen -p 0 -S mc -X eval 'stuff "stop"\015'
+
+[Install]
+WantedBy=multi-user.target
