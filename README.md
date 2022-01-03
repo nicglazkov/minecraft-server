@@ -1,5 +1,6 @@
-# minecraft-server
-
+# How to install Minecraft on Google Cloud Platform
+* `backup.sh` -- Script that makes backups of world files and deletes backups that are 7 days or older
+* `minecraft.service` -- systemd script to make minecraft a service
 ## Install Java
 ```bash
 sudo apt update && sudo apt upgrade -y
