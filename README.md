@@ -26,6 +26,10 @@ screen java -Xms4G -Xmx10G -jar paper.jar --nogui
 To detach: control+a+d
 To reattach: screen -r
 ```
+To update `minecraft.service`
+```
+sudo cp minecraft.service /etc/systemd/system/minecraft.service
+```
 ## Auto restart
 ```bash
 sudo useradd -r -m -d /opt/minecraft minecraft
