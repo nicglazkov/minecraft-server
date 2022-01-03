@@ -45,7 +45,7 @@ sudo systemctl enable minecraft
 ```bash
 sudo su
 crontab -e
-0 10 * * * /bin/systemctl restart minecraft
+0 12 * * * /bin/systemctl restart minecraft
 ```
 ## Server scripts
 ```bash
