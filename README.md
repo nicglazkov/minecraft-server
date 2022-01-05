@@ -50,4 +50,5 @@ crontab -e
 ## Server scripts
 ```bash
 cp backup.sh /opt/minecraft
+du -sh world/ world_nether/ world_the_end/
 ```
