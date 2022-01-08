@@ -51,4 +51,5 @@ crontab -e
 ```bash
 cp backup.sh /opt/minecraft
 du -sh world/ world_nether/ world_the_end/
+df -h
 ```
