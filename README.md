@@ -30,6 +30,10 @@ To update `minecraft.service`
 ```
 sudo cp minecraft.service /etc/systemd/system/minecraft.service
 ```
+To run the server manually
+```
+sudo su -- minecraft
+```
 ## Auto restart
 ```bash
 sudo useradd -r -m -d /opt/minecraft minecraft
