@@ -57,3 +57,7 @@ cp backup.sh /opt/minecraft
 du -sh world/ world_nether/ world_the_end/
 df -h
 ```
+## Check size of current directory
+```
+du -h -s
+```
