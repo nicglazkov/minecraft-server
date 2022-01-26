@@ -1,6 +1,7 @@
 [Unit]
 Description=Minecraft Server
 After=network.target
+TimeoutStopSec=300
 
 [Service]
 WorkingDirectory=/opt/minecraft/paper
