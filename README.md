@@ -61,6 +61,10 @@ Copy files from the server
 ```
 scp user@ip:/source file ~/destination file
 ```
+Check systemd logs
+```
+journalctl -u minecraft.service --since yesterday
+```
 ## Check size of current directory
 ```
 du -h -s
