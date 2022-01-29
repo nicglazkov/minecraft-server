@@ -1,10 +1,10 @@
 [Unit]
 Description=Minecraft Server
 After=network.target
-TimeoutStopSec=300
 
 [Service]
 WorkingDirectory=/opt/minecraft/paper
+TimeoutSec=300
 
 User=minecraft
 Group=minecraft
