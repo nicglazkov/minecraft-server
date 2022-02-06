@@ -29,6 +29,7 @@ To reattach: screen -r
 To update `minecraft.service`
 ```
 sudo cp minecraft.service /etc/systemd/system/minecraft.service
+systemctl daemon-reload
 ```
 To run the server manually
 ```
