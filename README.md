@@ -70,3 +70,7 @@ journalctl -u minecraft.service --since yesterday
 ```
 du -h -s
 ```
+## Extract .tar.gz
+```
+tar -xf <filename>
+```
